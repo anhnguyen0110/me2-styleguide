@@ -1,0 +1,38 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+$primary-font: 'Montserrat',
+sans-serif;
+// Colors
+$primary-color: #35D1A3;
+$secondary-color: #2A2F38;
+$tertiary-color: #F3245D;
+$color-new: #2292ff;
+$color-success: $primary-color;
+$color-alert: #ee1d1d;
+$color-warning: #FBA842;
+$color-pending: grey;
+$color-white: #fff;
+$text-color: $secondary-color;
+$text-color-light: lighten($secondary-color,
+25%);
+$text-color-white: #fff;
+$link-color: $primary-color;
+$border-color: #979797;
+$border-color-light: #E0E0E0;
+$bg-color: #f8f8f8;
+$bg-color-light: #f1f1f1;
+$bg-color-white: #fff;
+// Breakpoints
+$grid-lg: 1200px;
+$grid-md: 1024px;
+$grid-sm--max: 769px;
+$grid-sm--min: 770px;
+$grid-xs: 480px;
+$grid-xxs: 320px;
+// Z index map
+$zindex: ( modal: 1000,
+dropdown: 500,
+header: 100,
+footer: 100,
+sidebar: 200,
+panel: 100);

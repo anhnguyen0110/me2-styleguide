@@ -1,19 +1,9 @@
-Style-Guide-Boilerplate v3.3.0
-==============================
-
-A starting point for crafting living style guides.
-
+## Credit
+Thanks to:
+Build on top of Brett Jankord's living styleguide:
 [View Demo](http://brettjankord.com/projects/style-guide-boilerplate/)
 
-*Note: Sample patterns have been included in the demo. Your site will have its own unique patterns.*
-
-![Screenshot](http://brettjankord.com/projects/style-guide-boilerplate/style-guide-boilerplate-v3.0.0.jpg)
-
 ## Getting Started With Style Guide Boilerplate
-
-### Download the Style Guide Boilerplate
-You can clone, fork, or download the repo from GitHub.
-Once you have the files for **Style Guide Boilerplate**, you'll create a directory on your site for them.
 
 ### Set up a directory on your site for the style guide
 I recommend creating a directory named `style-guide` in your site's root directory. I think it would be awesome if I could go to `anysite.com/style-guide/` and check out that site's style guide.
@@ -54,7 +44,7 @@ For example, if you want to create doc for `markup/patterns/breadcrumbs.html`, c
 You should now be able to see the new doc at `yoursite.com/style-guide/`
 
 ## Running the app
-You can run the application with PHP's built in web server. Simply run the following command:
+You can the application with PHP's built in web server. Simply run the following command:
 
 `php -S localhost:8000`
 
@@ -65,62 +55,5 @@ You can generate a static index.html version of style guide boilerplate by runni
 
 `php index.php > index.html`
 
-## Browser Support
-I've built **Style Guide Boilerplate** with progressive enhancement in mind to work on a wide range of browsers.
-
-Known supported browsers include:
-
-* Chrome
-* Firefox
-* Safari
-* Opera
-* IE8+
-* Safari for iOS
-* Stock Android Browser (4.0+)
-
-If you come across any bugs, or have any other issues with the boilerplate, please open an issue here on GitHub.
-
-
 ## Additional Resources
 [Styleguides.io](http://styleguides.io)
-
-[Front-end Style Guides](http://24ways.org/2011/front-end-style-guides/)
-
-[Front-end Style Guide Roundup](https://gimmebar.com/collection/4ecd439c2f0aaad734000022/front-end-styleguides)
-
-[Future-Friendly Style Guides](https://speakerdeck.com/lukebrooker/future-friendly-style-guides)
-
-[HTML KickStart](http://www.99lime.com/elements/)
-
-[Oli.jp Style Guide](http://oli.jp/2011/style-guide/)
-
-[Jeremy Keith's Pattern Primer](http://adactio.com/journal/5028/)
-
-[Paul Robert Llyod's Style Guide](http://www.paulrobertlloyd.com/about/styleguide/)
-
-[Pears](http://pea.rs/)
-
-[Starbucks Style Guide](http://www.starbucks.com/static/reference/styleguide/)
-
-## Credit
-Thanks to:
-
-Jeremy Keith for letting me build on top of [Pattern Primer](https://github.com/adactio/Pattern-Primer).
-
-## Ports
-* A nodejs port using handlebars is available at [Style-Guide-Boilerplate-nodejs](https://github.com/DeadlyBrad42/Style-Guide-Boilerplate-nodejs).
-* A ruby port avaiable at [Rails_App_Style_Guide](https://github.com/JoshuaMSchultz/Rails_App_Style_Guide)
-
-## Contributing to this project
-
-Anyone and everyone is welcome to contribute. Please take a moment to
-review the [guidelines for contributing](CONTRIBUTING.md).
-
-* [Bug reports](CONTRIBUTING.md#bugs)
-* [Feature requests](CONTRIBUTING.md#features)
-* [Pull requests](CONTRIBUTING.md#pull-requests)
-
-## Licensing
-**Style Guide Boilerplate** is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License)
-
-Use it, build upon it, make awesome shit with it.

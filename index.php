@@ -40,7 +40,7 @@
           <a href="#sg-about">Getting Started</a>
         </li>
         <li>
-          <a href="#sg-colors">Colors</a>
+          <a href="#sg-colors">Brand Colors</a>
         </li>
         <li>
           <a href="#sg-fontStacks">Fonts</a>
@@ -63,7 +63,7 @@
 
           <!-- Manually add your UI colors here. -->
           <div class="sg-colors sg-section">
-            <h2 id="sg-colors" class="sg-h2">Colors</h2>
+            <h2 id="sg-colors" class="sg-h2">Brand Colors</h2>
             <div class="sg-color-grid">
               <div class="sg-color">
                 <div class="sg-color-swatch" style="background-color: #35D1A3;"></div>

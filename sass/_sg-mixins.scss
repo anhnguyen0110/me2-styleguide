@@ -1,0 +1,41 @@
+@mixin box-shadow($shadow1, $shadow2:false) {
+  $params: $shadow1;
+  @if $shadow2 {
+    $params: $shadow1, $shadow2;
+  }
+  box-shadow: $params;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+
+/* Shorthand mixins*/
+
+@mixin z-depth--1 {
+  @include box-shadow(2px 2px 10px rgba(127, 127, 127, 0.5));
+}
+
+@mixin box-shadow--light {
+  @include box-shadow(0 1px 1px 0 rgba(31, 45, 61, .05));
+}
+
+@mixin box-shadow--dark {
+  @include box-shadow(0 8px 18px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.3));
+}
+
+@mixin transition-std {
+  @include transition(all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000));
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

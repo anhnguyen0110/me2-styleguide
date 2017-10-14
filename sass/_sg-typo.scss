@@ -1,25 +1,64 @@
 /* Typography*/
 
+html {
+  @include typi-base();
+}
+
+body {
+  font-family: $primary-font;
+  @include typi-base();
+  color: $text-color;
+  font-weight: 400;
+}
+
+
+/* Reset margin top on text*/
+
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: inherit;
-  color: $text-color;
+h4 {
+  font-family: $primary-font;
+  font-weight: 700;
 }
 
-p,
-.p {
-  font-family: inherit;
-  color: $text-color;
+h1 {
+  @include typi($h1-map);
+  margin: 0 0 vr(1);
+}
+
+h2 {
+  @include typi($h2-map);
+  margin: 0 0 vr(1);
+}
+
+h3 {
+  @include typi($h3-map);
+  margin: 0 0 vr(.6);
+}
+
+h4 {
+  @include typi($h4-map);
+  margin: 0;
+}
+
+h5 {
+  @include typi($h5-map);
+  margin: 0;
+}
+
+p {
+  @include typi($p-map);
+  margin: 0;
+}
+
+label {
+  @include typi($p-map);
+}
+
+li {
+  @include typi($li-map);
+  margin: 0;
 }
 
 

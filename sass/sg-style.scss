@@ -1,9 +1,13 @@
 // Settings
+@import 'typi/typi';
 @import 'sg-variables';
 @import 'sg-mixins';
 @import 'sg-base';
+// Styleguide styles
+@import 'sg-styleguide';
 // Elements
 @import 'sg-buttons';
 @import 'sg-typo';
 @import 'sg-form';
 @import 'sg-checkbox';
+@import 'sg-cards';

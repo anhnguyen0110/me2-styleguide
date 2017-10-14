@@ -60,8 +60,9 @@
         <div class="sg-info">
           <div class="sg-about sg-section">
             <h2 id="sg-about" class="sg-h2">Getting Started</h2>
-            <p>This living style guide is a great tool to promote visual consistency, unify UX designers and front-end developers, as well as speed up development times at Me2.</p>
+            <p>This living style guide is to promote visual consistency and aim to speed up UI development times at Me2.</p>
             <p>If you are looking for resources on style guides, check out <a href="http://styleguides.io">styleguides.io</a>. There are a ton of great articles, books, podcasts, talks, and other style guide tools!</p>
+            <p>Still a working progress! Watch this space, more stuffs will be added as we build out the platform :) </p>
           </div>
           <!--/.sg-about-->
 

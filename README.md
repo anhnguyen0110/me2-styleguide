@@ -1,5 +1,5 @@
 ## Credit
-Build on top of [Brett Jankord's living styleguide] (http://brettjankord.com/projects/style-guide-boilerplate/)
+Build on top of Brett Jankord's living styleguide (https://github.com/bjankord/Style-Guide-Boilerplate)
 
 ## Getting Started With Style Guide Boilerplate
 

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>Me2 Styleguide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <!--[if lt IE 9]><link rel="stylesheet" href="css/sg-style-old-ie.css"><![endif]-->
+
+  <!-- Icon font -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/github-markdown.css">
+  <link rel="stylesheet" href="css/sg-style.css">
+
+  <!-- prism Syntax Highlighting Styles -->
+  <link rel="stylesheet" href="vendor/prism/prism.css">
+</head>
+
+<body>
+  <a href="#main" class="sg-visually-hidden sg-visually-hidden-focusable">Skip to main content</a>
+
+  <div id="top" class="sg-header" role="banner">
+    <div class="sg-container">
+      <h1 class="sg-logo">
+        <img class="sg-logo-img" src="images/me2-logo-white.png">
+        <!-- <span class="sg-logo-initials">Me2</span>
+        <span class="sg-logo-full">STYLE GUIDE</span> -->
+      </h1>
+      <button type="button" class="sg-nav-toggle">Menu</button>
+    </div>
+  </div>
+  <!--/.sg-header-->
+
+  <div class="sg-wrapper sg-clearfix">
+    <div id="nav" class="sg-sidebar" role="navigation">
+      <h2 class="sg-h2 sg-subnav-title">About</h2>
+      <ul class="sg-nav-group">
+        <li>
+          <a href="#sg-about">Getting Started</a>
+        </li>
+        <li>
+          <a href="#sg-colors">Brand Colors</a>
+        </li>
+        <li>
+          <a href="#sg-fontStacks">Fonts</a>
+        </li>
+      </ul>
+
+      <ul class="sg-nav-group"><li class="sg-subnav-parent"><h2 id="sg-markup-base" class="sg-h2 sg-title">base</h2><ul class="sg-nav-group"><li><a href="#sg-markup-base-1-headings-html">1 headings</a></li><li><a href="#sg-markup-base-2-buttons-html">2 buttons</a></li><li><a href="#sg-markup-base-3-icons-html">3 icons</a></li><li><a href="#sg-markup-base-4-forms-html">4 forms</a></li><li><a href="#sg-markup-base-5-radio and checkbox-html">5 radio and checkbox</a></li></ul></li><li class="sg-subnav-parent"><h2 id="sg-markup-patterns" class="sg-h2 sg-title">patterns</h2><ul class="sg-nav-group"><li><a href="#sg-markup-patterns-breadcrumbs-html">breadcrumbs</a></li><li><a href="#sg-markup-patterns-cards-html">cards</a></li></ul></li></ul>    </div>
+    <!--/.sg-sidebar-->
+
+    <div id="main" class="sg-main" role="main">
+      <div class="sg-container">
+        <div class="sg-info">
+          <div class="sg-about sg-section">
+            <h2 id="sg-about" class="sg-h2">Getting Started</h2>
+            <p>This living style guide is to promote visual consistency and aim to speed up UI development times at Me2.</p>
+            <p>If you are looking for resources on style guides, check out <a href="http://styleguides.io">styleguides.io</a>. There are a ton of great articles, books, podcasts, talks, and other style guide tools!</p>
+            <p>Still a working progress! Watch this space, more stuffs will be added as we build out the platform :) </p>
+          </div>
+          <!--/.sg-about-->
+
+          <!-- Manually add your UI colors here. -->
+          <div class="sg-colors sg-section">
+            <h2 id="sg-colors" class="sg-h2">Brand Colors</h2>
+            <div class="sg-color-grid">
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #35D1A3;"></div>
+                <div class="sg-color-name">Primary</div>
+                <div class="sg-color-value">#35D1A3</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #2A2F38;"></div>
+
+                <div class="sg-color-name">Secondary</div>
+                <div class="sg-color-value">#2A2F38</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #F3245D;"></div>
+                <div class="sg-color-name">Tertiary</div>
+                <div class="sg-color-value">#F3245D</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #ffffff; border:"></div>
+                <div class="sg-color-name">White</div>
+                <div class="sg-color-value">#FFFFFF</div>
+              </div>
+            </div>
+            <!--/.sg-color-grid-->
+            <div class="sg-color-grid">
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #2292ff;"></div>
+                <div class="sg-color-name">New</div>
+                <div class="sg-color-value">#2292FF</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #EE1D1D;"></div>
+                <div class="sg-color-name">Alert</div>
+                <div class="sg-color-value">#EE1D1D</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #FBA842;"></div>
+                <div class="sg-color-name">Warning</div>
+                <div class="sg-color-value">#FBA842</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch" style="background-color: #979797;"></div>
+                <div class="sg-color-name">Grey</div>
+                <div class="sg-color-value">#979797</div>
+              </div>
+            </div>
+            <!--/.sg-color-grid-->
+          </div>
+          <!--/.sg-colors-->
+
+          <!-- Manually add your fonts here. -->
+          <div class="sg-font-stacks sg-section">
+            <h2 id="sg-fontStacks" class="sg-h2">Fonts</h2>
+            <dl class="sg-font-list">
+              <dt>Primary Font:</dt>
+              <dd>"Montserrat" sans-serif;</dd>
+            </dl>
+            <div class="sg-markup-controls"><a class="sg-btn--top" href="#top">Back to Top</a></div>
+          </div>
+          <!--/.sg-font-stacks-->
+        </div>
+        <!--/.sg-info-->
+
+        <div class="sg-section-group"><h1 id="sg-markup-base" class="sg-h1 sg-title">base</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-base-1-headings-html" class="sg-h2 sg-title">1 headings</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p> Set font sizes and line heights at different breakpoints with font-map using TYPI - https://github.com/zellwk/typi</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><h1>Heading 1 with <small>small text</small> and a <a href="#">link</a></h1>
+<h2>Heading 2 with <small>small text</small> and a <a href="#">link</a></h2>
+<h3>Heading 3 with <small>small text</small> and a <a href="#">link</a></h3>
+<h4>Heading 4 with <small>small text</small> and a <a href="#">link</a></h4>
+<h5>Heading 5 with <small>small text</small> and a <a href="#">link</a></h5>
+<hr>
+<p><strong>Paragraph:</strong></p>
+<p>This whale is not dead; he is only dispirited; out of sorts, perhaps; hypochondriac; and so supine, that the hinges of his jaw have relaxed, leaving him there in that ungainly sort of plight, a reproach to all his tribe, who must, no doubt, imprecate
+  lock-jaws upon him. This whale is not dead; he is only dispirited; out of sorts, perhaps; hypochondriac; and so supine, that the hinges of his jaw have relaxed, leaving him there in that ungainly sort of plight, a reproach to all his tribe, who must,
+  no doubt, imprecate lock-jaws upon him.</p>
+<hr>
+<ul>
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+  <li>List item</li>
+</ul></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;h1&gt;Heading 1 with &lt;small&gt;small text&lt;/small&gt; and a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;&lt;/h1&gt;
+&lt;h2&gt;Heading 2 with &lt;small&gt;small text&lt;/small&gt; and a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;Heading 3 with &lt;small&gt;small text&lt;/small&gt; and a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;Heading 4 with &lt;small&gt;small text&lt;/small&gt; and a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;&lt;/h4&gt;
+&lt;h5&gt;Heading 5 with &lt;small&gt;small text&lt;/small&gt; and a &lt;a href=&quot;#&quot;&gt;link&lt;/a&gt;&lt;/h5&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Paragraph:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This whale is not dead; he is only dispirited; out of sorts, perhaps; hypochondriac; and so supine, that the hinges of his jaw have relaxed, leaving him there in that ungainly sort of plight, a reproach to all his tribe, who must, no doubt, imprecate
+  lock-jaws upon him. This whale is not dead; he is only dispirited; out of sorts, perhaps; hypochondriac; and so supine, that the hinges of his jaw have relaxed, leaving him there in that ungainly sort of plight, a reproach to all his tribe, who must,
+  no doubt, imprecate lock-jaws upon him.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+&lt;/ul&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-2-buttons-html" class="sg-h2 sg-title">2 buttons</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Me2 button styles</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><p><strong>Standard</strong></p>
+<button class="btn btn--primary">Primary button</button>
+<button class="btn btn--secondary">Secondary button</button>
+<button class="btn btn--border">Border button</button>
+<hr>
+<p><strong>Variations</strong></p>
+<button class="btn btn--primary btn--l">Large button</button>
+<button class="btn btn--primary btn--m">Medium button</button>
+<button class="btn btn--primary btn--s">Small button</button>
+<br>
+<button class="btn btn--secondary btn--s btn--circle"><i class="material-icons">&#xE876;</i></button>
+<button class="btn btn--border btn--s btn--round">Round button</button>
+<hr>
+<p><strong>Empty radio check</strong></p>
+<div class="btn-group btn-group-divided">
+  <div class="btn--label">
+    <label>
+      <input type="radio" name="emptyradio" id="option1" value="option1" checked>
+      <span>Monthly</span>
+    </label>
+  </div>
+  <div class="btn--label">
+    <label>
+      <input type="radio" name="emptyradio" id="option2" value="option2">
+      <span>Yearly</span>
+    </label>
+  </div>
+</div>
+<hr>
+<p><strong>Button radio check</strong></p>
+<div class="btn-group btn-group-divided">
+  <div class="btn--check">
+    <label>
+      <input type="radio" name="buttoncheck" id="option1" value="option1" checked>
+      <span>Pick Ben</span>
+    </label>
+  </div>
+  <div class="btn--check">
+    <label>
+      <input type="radio" name="buttoncheck" id="option2" value="option2">
+      <span>Pick Melissa</span>
+    </label>
+  </div>
+</div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;p&gt;&lt;strong&gt;Standard&lt;/strong&gt;&lt;/p&gt;
+&lt;button class=&quot;btn btn--primary&quot;&gt;Primary button&lt;/button&gt;
+&lt;button class=&quot;btn btn--secondary&quot;&gt;Secondary button&lt;/button&gt;
+&lt;button class=&quot;btn btn--border&quot;&gt;Border button&lt;/button&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Variations&lt;/strong&gt;&lt;/p&gt;
+&lt;button class=&quot;btn btn--primary btn--l&quot;&gt;Large button&lt;/button&gt;
+&lt;button class=&quot;btn btn--primary btn--m&quot;&gt;Medium button&lt;/button&gt;
+&lt;button class=&quot;btn btn--primary btn--s&quot;&gt;Small button&lt;/button&gt;
+&lt;br&gt;
+&lt;button class=&quot;btn btn--secondary btn--s btn--circle&quot;&gt;&lt;i class=&quot;material-icons&quot;&gt;&amp;#xE876;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn--border btn--s btn--round&quot;&gt;Round button&lt;/button&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Empty radio check&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;btn-group btn-group-divided&quot;&gt;
+  &lt;div class=&quot;btn--label&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;emptyradio&quot; id=&quot;option1&quot; value=&quot;option1&quot; checked&gt;
+      &lt;span&gt;Monthly&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;btn--label&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;emptyradio&quot; id=&quot;option2&quot; value=&quot;option2&quot;&gt;
+      &lt;span&gt;Yearly&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Button radio check&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;btn-group btn-group-divided&quot;&gt;
+  &lt;div class=&quot;btn--check&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;buttoncheck&quot; id=&quot;option1&quot; value=&quot;option1&quot; checked&gt;
+      &lt;span&gt;Pick Ben&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;btn--check&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;buttoncheck&quot; id=&quot;option2&quot; value=&quot;option2&quot;&gt;
+      &lt;span&gt;Pick Melissa&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-3-icons-html" class="sg-h2 sg-title">3 icons</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Using <a href="https://material.io/icons/" target="_blank">Material Design Icon</a> Font system for consistency</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><article>
+  <p><strong>Sizes</strong></p>
+  <p>Standard size and clickable<i class="material-icons icon-clickable">&#xE88A;</i></p>
+  <p>Small size <i class="material-icons icon--sm">&#xE88A;</i></p>
+  <hr>
+  <p><strong>Colors</strong></p>
+  <p>Success color <i class="material-icons icon-color--success">&#xE86C;</i></p>
+  <p>Alert color <i class="material-icons icon-color--warning">&#xE000;</i></p>
+</article></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;article&gt;
+  &lt;p&gt;&lt;strong&gt;Sizes&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;Standard size and clickable&lt;i class=&quot;material-icons icon-clickable&quot;&gt;&amp;#xE88A;&lt;/i&gt;&lt;/p&gt;
+  &lt;p&gt;Small size &lt;i class=&quot;material-icons icon--sm&quot;&gt;&amp;#xE88A;&lt;/i&gt;&lt;/p&gt;
+  &lt;hr&gt;
+  &lt;p&gt;&lt;strong&gt;Colors&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;Success color &lt;i class=&quot;material-icons icon-color--success&quot;&gt;&amp;#xE86C;&lt;/i&gt;&lt;/p&gt;
+  &lt;p&gt;Alert color &lt;i class=&quot;material-icons icon-color--warning&quot;&gt;&amp;#xE000;&lt;/i&gt;&lt;/p&gt;
+&lt;/article&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-4-forms-html" class="sg-h2 sg-title">4 forms</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Form elements</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><div class="row">
+  <div class="col-sm-6">
+    <form>
+      <div class="form-group">
+        <label>Email address</label>
+        <input type="text" class="input-lg form-control" placeholder="Email address" required name="email" />
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="input-lg form-control" placeholder="Password" required name="password" />
+      </div>
+      <button type="submit" class="btn btn-block btn--primary btn--l">Sign In</button>
+      <br>
+      <div class="form-group">
+        <label for="">Please select</label>
+        <select class="form-control">
+          <option>option 1</option>
+          <option>option 2</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="">Text area</label>
+        <textarea class="form-control" maxlength="300" rows="6" type="text"></textarea>
+      </div>
+    </form>
+  </div>
+</div></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-sm-6&quot;&gt;
+    &lt;form&gt;
+      &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;Email address&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;input-lg form-control&quot; placeholder=&quot;Email address&quot; required name=&quot;email&quot; /&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;Password&lt;/label&gt;
+        &lt;input type=&quot;password&quot; class=&quot;input-lg form-control&quot; placeholder=&quot;Password&quot; required name=&quot;password&quot; /&gt;
+      &lt;/div&gt;
+      &lt;button type=&quot;submit&quot; class=&quot;btn btn-block btn--primary btn--l&quot;&gt;Sign In&lt;/button&gt;
+      &lt;br&gt;
+      &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;&quot;&gt;Please select&lt;/label&gt;
+        &lt;select class=&quot;form-control&quot;&gt;
+          &lt;option&gt;option 1&lt;/option&gt;
+          &lt;option&gt;option 2&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;&quot;&gt;Text area&lt;/label&gt;
+        &lt;textarea class=&quot;form-control&quot; maxlength=&quot;300&quot; rows=&quot;6&quot; type=&quot;text&quot;&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-base-5-radio and checkbox-html" class="sg-h2 sg-title">5 radio and checkbox</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Custom radio and checkbox </p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><p><strong>Radio</strong></p>
+<div class="radio">
+  <label><input type="radio" name="radio-btn1" checked>Option 1</label>
+</div>
+<div class="radio">
+  <label><input type="radio" name="radio-btn1" checked>Option 2</label>
+</div>
+<p><strong>Inline Radio</strong></p>
+<label class="radio-inline">
+    <input type="radio" name="radio-btn" checked/> Radio 1
+</label>
+<label class="radio-inline">
+    <input type="radio" name="radio-btn"/> Radio 2
+</label>
+<hr>
+<p><strong>Checkbox</strong></p>
+<div class="checkbox">
+  <label><input type="checkbox" checked>Checkbox 1</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox">Checkbox 2</label>
+</div>
+<p><strong>Inline Checkbox</strong></p>
+<label class="checkbox-inline">
+    <input type="checkbox" checked/> Checkbox 1
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox"/> Checkbox 2
+</label>
+<hr></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;p&gt;&lt;strong&gt;Radio&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;radio&quot;&gt;
+  &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio-btn1&quot; checked&gt;Option 1&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+  &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;radio-btn1&quot; checked&gt;Option 2&lt;/label&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Inline Radio&lt;/strong&gt;&lt;/p&gt;
+&lt;label class=&quot;radio-inline&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio-btn&quot; checked/&gt; Radio 1
+&lt;/label&gt;
+&lt;label class=&quot;radio-inline&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;radio-btn&quot;/&gt; Radio 2
+&lt;/label&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Checkbox&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+  &lt;label&gt;&lt;input type=&quot;checkbox&quot; checked&gt;Checkbox 1&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+  &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt;Checkbox 2&lt;/label&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Inline Checkbox&lt;/strong&gt;&lt;/p&gt;
+&lt;label class=&quot;checkbox-inline&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; checked/&gt; Checkbox 1
+&lt;/label&gt;
+&lt;label class=&quot;checkbox-inline&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;/&gt; Checkbox 2
+&lt;/label&gt;
+&lt;hr&gt;</code></pre></div></div></div></div><h1 id="sg-markup-patterns" class="sg-h1 sg-title">patterns</h1><div class="sg-section-group"><div class="sg-section"><h2 id="sg-markup-patterns-breadcrumbs-html" class="sg-h2 sg-title">breadcrumbs</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Breadcrumbs component</p></div></div><div class="sg-sub-section sg-example"><h3 class="sg-h3 sg-title">Example</h3><ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="/coach/client">Clients</a></li>
+  <li class="breadcrumb-item active">Samantha Hazel</li>
+</ol></div><div class="sg-sub-section"><div class="sg-markup-controls"><button type="button" class="sg-btn sg-btn--source">View Source</button><a class="sg-btn--top" href="#top">Back to Top</a></div><div class="sg-source"><button type="button" class="sg-btn sg-btn--select">Copy Source</button><pre class="line-numbers"><code class="language-markup">&lt;ol class=&quot;breadcrumb&quot;&gt;
+  &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;/coach/client&quot;&gt;Clients&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;breadcrumb-item active&quot;&gt;Samantha Hazel&lt;/li&gt;
+&lt;/ol&gt;</code></pre></div></div></div><div class="sg-section"><h2 id="sg-markup-patterns-cards-html" class="sg-h2 sg-title">cards</h2><div class="sg-sub-section sg-doc"><div class="markdown-body"><p>Card Components</p></div></div></div></div></div>      </div>
+      <!--/.sg-container-->
+    </div>
+    <!--/.sg-main-->
+  </div>
+  <!--/.sg-wrapper-->
+
+  <!--[if gt IE 8]><!-->
+  <script src="vendor/prism/prism.js"></script>
+  <!--<![endif]-->
+  <script src="js/sg-scripts.js"></script>
+</body>
+
+</html>

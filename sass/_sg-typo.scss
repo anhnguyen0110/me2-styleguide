@@ -1,0 +1,43 @@
+/* Typography*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  color: $text-color;
+}
+
+p,
+.p {
+  font-family: inherit;
+  color: $text-color;
+}
+
+
+/* Icons */
+
+// General icons eg. Material icons 
+i {
+  vertical-align: bottom;
+  &.icon--sm {
+    font-size: 20px;
+  }
+  &.icon-color--warning {
+    color: $color-alert;
+  }
+  &.icon-color--success {
+    color: $color-success;
+  }
+  &.icon-clickable {
+    cursor: pointer;
+  }
+}

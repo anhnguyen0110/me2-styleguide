@@ -534,7 +534,7 @@ body {
   width: 30px;
   height: 30px;
   text-align: center;
-  padding: 6px 0;
+  padding: 3px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 15px; }
@@ -691,5 +691,37 @@ body {
   .btn:visited {
     padding: .7em; } }
 /*end media*/
+/* Typography*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  color: #2A2F38; }
+
+p,
+.p {
+  font-family: inherit;
+  color: #2A2F38; }
+
+/* Icons */
+i {
+  vertical-align: bottom; }
+  i.icon--sm {
+    font-size: 20px; }
+  i.icon-color--warning {
+    color: #ee1d1d; }
+  i.icon-color--success {
+    color: #35D1A3; }
+  i.icon-clickable {
+    cursor: pointer; }
 
 /*# sourceMappingURL=sg-style.css.map */

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 $primary-font: 'Montserrat',
 sans-serif;
-// Colors
+// Branded Colors
 $primary-color: #35D1A3;
 $secondary-color: #2A2F38;
 $tertiary-color: #F3245D;
@@ -12,6 +12,7 @@ $color-alert: #ee1d1d;
 $color-warning: #FBA842;
 $color-pending: grey;
 $color-white: #fff;
+//Text and border colors
 $text-color: $secondary-color;
 $text-color-light: lighten($secondary-color,
 25%);
@@ -19,6 +20,7 @@ $text-color-white: #fff;
 $link-color: $primary-color;
 $border-color: #979797;
 $border-color-light: #E0E0E0;
+// Background colors
 $bg-color: #f8f8f8;
 $bg-color-light: #f1f1f1;
 $bg-color-white: #fff;

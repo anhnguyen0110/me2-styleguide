@@ -1,0 +1,150 @@
+// Badges
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 4px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #bbbbbb;
+  border-radius: 10px;
+  &.badge--success {
+    background-color: $color-success;
+  }
+  &.badge--warning {
+    background-color: $color-warning;
+  }
+  &.badge--alert {
+    background-color: $tertiary-color;
+  }
+}
+
+// Label
+.label {
+  display: inline;
+  padding: 9px 12px 7px;
+  border-width: 0 1px 4px 1px;
+  border: 1px solid transparent;
+  font-size: .6em;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 3px;
+  text-transform: uppercase;
+  &.label-new {
+    background-color: $color-new;
+    border-color: $color-new;
+  }
+  &.label-success {
+    background-color: $color-success;
+    border-color: $color-success;
+  }
+  &.label-warning {
+    background-color: $color-warning;
+    border-color: $color-warning;
+  }
+  &.label-alert {
+    background-color: $color-alert;
+    border-color: $color-alert;
+  }
+}
+
+
+/* Progress badges */
+
+.progress-badge {
+  position: relative;
+  margin: 15px;
+  text-align: left;
+  font-size: 1em;
+}
+
+.progress-badge__category {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
+  svg {
+    width: 100%;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
+
+.progress-badge__empty {
+  display: inline-block;
+  text-align: left;
+  a {
+    color: $text-color;
+    cursor: pointer;
+    font-size: .8em;
+    &.hover,
+    &.focus,
+    &.active {
+      color: $text-color-light;
+    }
+  }
+}
+
+.progress-badge__disabled {
+  display: inline-block;
+  text-align: left;
+  a {
+    color: $text-color;
+    opacity: .5;
+    cursor: not-allowed;
+    &.hover,
+    &.focus,
+    &.active {
+      opacity: .5;
+    }
+  }
+}
+
+.progress-badge__status {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  padding: 2px 0;
+  margin: 0 2px;
+  line-height: 0.5;
+  color: #fff;
+  text-align: center;
+  @include border-radius(50%);
+  i {
+    font-size: .6em;
+  }
+  &.status-success {
+    background-color: $color-success;
+  }
+  &.status-warning {
+    background-color: $color-warning;
+  }
+  &.status-alert {
+    background-color: $color-alert;
+  }
+}
+
+.progress-badge__bar {
+  display: inline-block;
+  span {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .progress {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    height: 10px;
+    width: 150px;
+    max-width: 150px;
+    margin: 5px;
+    @include border-radius(40px);
+  }
+}

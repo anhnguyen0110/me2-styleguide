@@ -1,0 +1,179 @@
+/* Profile Card */
+
+.profile-card__item {
+  font-size: 1.1em;
+  line-height: 1.3;
+  margin: 20px auto;
+}
+
+// Centered the card inside the container if multiple cards on a row
+.profile-card__detail {
+  max-width: 270px;
+  min-width: 270px;
+  margin: auto;
+  background: #fff;
+  @include z-depth--1;
+  @include border-radius(5px);
+  &.flat {
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+.profile-card__risk-label {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+}
+
+.profile-card__avatar {
+  position: relative;
+  display: block;
+  padding: 10px;
+  .avatar {
+    position: relative;
+    background: $bg-color-light;
+    height: 60px;
+    width: 60px;
+    @include border-radius(50%);
+    img {
+      @include border-radius(50%);
+      margin: auto;
+    }
+  }
+  .status {
+    position: absolute;
+    margin: 5px auto;
+    bottom: 5px;
+    right: -10px;
+    line-height: .1;
+    /* hack to reduce space */
+    .chatter-status {
+      font-size: 3.5em;
+      position: relative;
+      top: 10px;
+      left: -10px;
+      line-height: .5;
+      &.online {
+        color: $color-success;
+      }
+      &.offline {
+        color: $color-pending;
+      }
+    }
+  }
+  .name {
+    position: absolute;
+    top: 15%;
+    left: 115%;
+    font-size: 1.2em;
+    line-height: 1;
+  }
+}
+
+.profile-detail--bio {
+  padding: 10px;
+  text-transform: capitalize;
+  .profile small {
+    margin-right: 10px;
+  }
+}
+
+.profile-detail--goal {
+  position: relative;
+  margin: auto;
+  .goal-tracker {
+    max-width: 240px;
+    margin: auto;
+    font-size: .85em;
+  }
+  .pop-over {
+    position: absolute;
+    bottom: -90%;
+    left: 52%;
+    span {
+      height: 30px;
+      width: 30px;
+      padding: 4px 7px;
+      background-color: $tertiary-color;
+      color: $color-white;
+      text-align: center;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        right: 0;
+        left: 40%;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid $tertiary-color;
+        border-top: none;
+        z-index: 1;
+      }
+    }
+  }
+  .progress-text {
+    color: #2A2F38;
+    &.finish {
+      float: right;
+      color: #35D1A3;
+      .dot {
+        color: #35D1A3;
+      }
+    }
+    .dot {
+      color: #2A2F38;
+      font-size: 4em;
+      line-height: .1;
+    }
+  }
+  .progress {
+    height: 3px;
+    background-color: #35D1A3;
+  }
+  .progress-bar {
+    background-color: #2A2F38;
+    border: dashed 1px #2A2F38;
+  }
+  .progress-bar:last-child:before {
+    background-color: #35D1A3;
+  }
+  .tooltip-inner {
+    background-color: #F3245D;
+  }
+  .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #F3245D;
+  }
+}
+
+.profile-detail--progress {
+  padding: 10px;
+}
+
+.profile-detail--actions {
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: $grid-md) {
+  .profile--detail-goal {
+    .goal-tracker {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+/* end media*/
+
+@media (max-width: $grid-sm--max) {
+  .profile-card__detail {
+    max-width: auto;
+    min-width: 270px;
+  }
+}
+
+
+/* end media*/

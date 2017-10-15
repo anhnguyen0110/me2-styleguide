@@ -1296,4 +1296,477 @@ input[type="radio"]:checked:after,
 .radio-inline input[type="radio"]:checked:after {
   border-color: #35D1A3; }
 
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 4px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #bbbbbb;
+  border-radius: 10px; }
+  .badge.badge--success {
+    background-color: #35D1A3; }
+  .badge.badge--warning {
+    background-color: #FBA842; }
+  .badge.badge--alert {
+    background-color: #F3245D; }
+
+.label {
+  display: inline;
+  padding: 9px 12px 7px;
+  border-width: 0 1px 4px 1px;
+  border: 1px solid transparent;
+  font-size: .6em;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 3px;
+  text-transform: uppercase; }
+  .label.label-new {
+    background-color: #2292ff;
+    border-color: #2292ff; }
+  .label.label-success {
+    background-color: #35D1A3;
+    border-color: #35D1A3; }
+  .label.label-warning {
+    background-color: #FBA842;
+    border-color: #FBA842; }
+  .label.label-alert {
+    background-color: #ee1d1d;
+    border-color: #ee1d1d; }
+
+/* Progress badges */
+.progress-badge {
+  position: relative;
+  margin: 15px;
+  text-align: left;
+  font-size: 1em; }
+
+.progress-badge__category {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  vertical-align: middle; }
+  .progress-badge__category svg {
+    width: 100%;
+    height: 20px;
+    margin-right: 5px; }
+
+.progress-badge__empty {
+  display: inline-block;
+  text-align: left; }
+  .progress-badge__empty a {
+    color: #2A2F38;
+    cursor: pointer;
+    font-size: .8em; }
+    .progress-badge__empty a.hover, .progress-badge__empty a.focus, .progress-badge__empty a.active {
+      color: #616c81; }
+
+.progress-badge__disabled {
+  display: inline-block;
+  text-align: left; }
+  .progress-badge__disabled a {
+    color: #2A2F38;
+    opacity: .5;
+    cursor: not-allowed; }
+    .progress-badge__disabled a.hover, .progress-badge__disabled a.focus, .progress-badge__disabled a.active {
+      opacity: .5; }
+
+.progress-badge__status {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  padding: 2px 0;
+  margin: 0 2px;
+  line-height: 0.5;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%; }
+  .progress-badge__status i {
+    font-size: .6em; }
+  .progress-badge__status.status-success {
+    background-color: #35D1A3; }
+  .progress-badge__status.status-warning {
+    background-color: #FBA842; }
+  .progress-badge__status.status-alert {
+    background-color: #ee1d1d; }
+
+.progress-badge__bar {
+  display: inline-block; }
+  .progress-badge__bar span {
+    font-size: 9px;
+    line-height: 1.5; }
+  .progress-badge__bar .progress {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    height: 10px;
+    width: 150px;
+    max-width: 150px;
+    margin: 5px;
+    border-radius: 40px; }
+
+/* Customised styles for following widget
+Status circle
+Breadcrumb
+Progress bar
+Date picker
+Dropdown
+Accordion
+ng2-Calendar
+ */
+/* Status Circle */
+.status--circle {
+  padding: 9px;
+  margin: 5px 0;
+  float: right;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* Breadcrumb */
+.breadcrumb {
+  color: #2A2F38; }
+  .breadcrumb > .active {
+    color: #14171b; }
+
+/* Progress Bar */
+.progress {
+  height: 10px; }
+
+.progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 23px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #35D1A3;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease; }
+
+.progress-bar:last-child:before {
+  background-color: #2A2F38;
+  opacity: .6; }
+
+.progress-bar-danger {
+  background-color: #ee1d1d; }
+
+.progress-bar-success {
+  background-color: #35D1A3; }
+
+/* Calendar widget*/
+.weekly-calendar__wrapper .nav-centered {
+  height: 45px; }
+  .weekly-calendar__wrapper .nav-centered ul.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+.weekly-calendar__wrapper .nav-tabs {
+  position: relative;
+  width: 100%;
+  background-color: #fff; }
+
+/* end weekly calendar*/
+/* Dropdown */
+.dropdown-menu {
+  z-index: 500; }
+
+/* Date picker */
+.ui-kit-calendar-container {
+  position: relative;
+  width: 100% !important;
+  margin: 0 10px 0 0;
+  display: block;
+  z-index: 99;
+  position: relative;
+  margin: 0 10px 0 0;
+  display: block;
+  float: none !important;
+  z-index: 99; }
+  .ui-kit-calendar-container .ui-kit-calendar-input {
+    border: 1px solid #aec9de;
+    border-radius: 0px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 50px !important;
+    background: #fcfcff;
+    border-radius: 4px !important;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease; }
+    .ui-kit-calendar-container .ui-kit-calendar-input.opened {
+      width: 100% !important;
+      border: 1px solid #dddddd !important;
+      color: #2A2F38 !important;
+      background: #fff !important;
+      font-size: 14px !important; }
+  .ui-kit-calendar-container .ui-kit-calendar-cal-container {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    color: #fff;
+    background: #35D1A3 !important;
+    display: inline-block;
+    width: 300px;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 300ms linear 300ms;
+    transition: visibility 0s, opacity 300ms linear 300ms; }
+    .ui-kit-calendar-container .ui-kit-calendar-cal-container:after {
+      border-left: 15px solid #35D1A3 !important; }
+    .ui-kit-calendar-container .ui-kit-calendar-cal-container .ui-kit-calendar-day-names {
+      background: #35D1A3 !important; }
+
+/* Accordion */
+.accordion-toggle i {
+  font-size: 1.5em; }
+
+/* ng2 Datepicker */
+#datePicker .well {
+  background-color: #fff; }
+#datePicker .btn {
+  border: solid 1px transparent;
+  color: #2A2F38;
+  padding: 0.5em 1em;
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent; }
+  #datePicker .btn:hover, #datePicker .btn.focus, #datePicker .btn.active, #datePicker .btn:active {
+    background-image: none;
+    box-shadow: none;
+    color: #35D1A3; }
+#datePicker .btn-info {
+  border: solid 1px transparent;
+  color: #2A2F38;
+  padding: 0.5em 1em;
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent; }
+#datePicker .btn-info:active,
+#datePicker .btn-info.active,
+#datePicker .open > .dropdown-toggle.btn-info {
+  color: #35D1A3;
+  background-color: transparent;
+  border: solid 1px #35D1A3; }
+#datePicker .text-info {
+  color: #35D1A3; }
+
+#datePickerDevise .well {
+  background-color: #fff;
+  max-width: 360px; }
+#datePickerDevise .btn {
+  border: solid 1px transparent;
+  color: #2A2F38;
+  padding: 0.5em 1em;
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent; }
+  #datePickerDevise .btn:hover, #datePickerDevise .btn.focus, #datePickerDevise .btn.active, #datePickerDevise .btn:active {
+    background-image: none;
+    box-shadow: none;
+    color: #35D1A3; }
+#datePickerDevise .btn-info {
+  border: solid 1px transparent;
+  color: #2A2F38;
+  padding: 0.5em 1em;
+  background-image: none;
+  box-shadow: none;
+  background-color: transparent; }
+#datePickerDevise .btn-info:active,
+#datePickerDevise .btn-info.active,
+#datePickerDevise .open > .dropdown-toggle.btn-info {
+  color: #35D1A3;
+  background-color: transparent;
+  border: solid 1px #35D1A3; }
+#datePickerDevise .text-info {
+  color: #35D1A3; }
+
+@media (max-width: 769px) {
+  .weekly-calendar__wrapper .nav-tabs > li.active > a,
+  .weekly-calendar__wrapper .nav-tabs > li.active > a :focus {
+    background-color: #2A2F38;
+    color: #fff;
+    border: none;
+    box-shadow: inset 0 -3px 0 transparent;
+    border-radius: 0; }
+  .weekly-calendar__wrapper .nav-tabs > li.active > a:after {
+    content: "";
+    position: absolute;
+    bottom: -16%;
+    right: 0px;
+    left: 32%;
+    width: 0px;
+    height: 0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #2A2F38;
+    z-index: 100; } }
+/* end media*/
+@media (max-width: 480px) {
+  #datePicker .btn {
+    padding: 0.5em; }
+
+  #datePickerDevise .well {
+    max-width: 300px; }
+  #datePickerDevise .btn {
+    padding: 0.5em; } }
+/* end media*/
+/* Profile Card */
+.profile-card__item {
+  font-size: 1.1em;
+  line-height: 1.3;
+  margin: 20px auto; }
+
+.profile-card__detail {
+  max-width: 270px;
+  min-width: 270px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 2px 2px 10px rgba(127, 127, 127, 0.5);
+  border-radius: 5px; }
+  .profile-card__detail.flat {
+    box-shadow: none;
+    background-color: transparent; }
+
+.profile-card__risk-label {
+  position: absolute;
+  top: -10px;
+  right: 15px; }
+
+.profile-card__avatar {
+  position: relative;
+  display: block;
+  padding: 10px; }
+  .profile-card__avatar .avatar {
+    position: relative;
+    background: #f1f1f1;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%; }
+    .profile-card__avatar .avatar img {
+      border-radius: 50%;
+      margin: auto; }
+  .profile-card__avatar .status {
+    position: absolute;
+    margin: 5px auto;
+    bottom: 5px;
+    right: -10px;
+    line-height: .1;
+    /* hack to reduce space */ }
+    .profile-card__avatar .status .chatter-status {
+      font-size: 3.5em;
+      position: relative;
+      top: 10px;
+      left: -10px;
+      line-height: .5; }
+      .profile-card__avatar .status .chatter-status.online {
+        color: #35D1A3; }
+      .profile-card__avatar .status .chatter-status.offline {
+        color: grey; }
+  .profile-card__avatar .name {
+    position: absolute;
+    top: 15%;
+    left: 115%;
+    font-size: 1.2em;
+    line-height: 1; }
+
+.profile-detail--bio {
+  padding: 10px;
+  text-transform: capitalize; }
+  .profile-detail--bio .profile small {
+    margin-right: 10px; }
+
+.profile-detail--goal {
+  position: relative;
+  margin: auto; }
+  .profile-detail--goal .goal-tracker {
+    max-width: 240px;
+    margin: auto;
+    font-size: .85em; }
+  .profile-detail--goal .pop-over {
+    position: absolute;
+    bottom: -90%;
+    left: 52%; }
+    .profile-detail--goal .pop-over span {
+      height: 30px;
+      width: 30px;
+      padding: 4px 7px;
+      background-color: #F3245D;
+      color: #fff;
+      text-align: center; }
+      .profile-detail--goal .pop-over span:before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        right: 0;
+        left: 40%;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid #F3245D;
+        border-top: none;
+        z-index: 1; }
+  .profile-detail--goal .progress-text {
+    color: #2A2F38; }
+    .profile-detail--goal .progress-text.finish {
+      float: right;
+      color: #35D1A3; }
+      .profile-detail--goal .progress-text.finish .dot {
+        color: #35D1A3; }
+    .profile-detail--goal .progress-text .dot {
+      color: #2A2F38;
+      font-size: 4em;
+      line-height: .1; }
+  .profile-detail--goal .progress {
+    height: 3px;
+    background-color: #35D1A3; }
+  .profile-detail--goal .progress-bar {
+    background-color: #2A2F38;
+    border: dashed 1px #2A2F38; }
+  .profile-detail--goal .progress-bar:last-child:before {
+    background-color: #35D1A3; }
+  .profile-detail--goal .tooltip-inner {
+    background-color: #F3245D; }
+  .profile-detail--goal .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #F3245D; }
+
+.profile-detail--progress {
+  padding: 10px; }
+
+.profile-detail--actions {
+  padding: 10px;
+  text-align: center; }
+
+@media (max-width: 1024px) {
+  .profile--detail-goal .goal-tracker {
+    margin-left: 10px; } }
+/* end media*/
+@media (max-width: 769px) {
+  .profile-card__detail {
+    max-width: auto;
+    min-width: 270px; } }
+/* end media*/
+
 /*# sourceMappingURL=sg-style.css.map */

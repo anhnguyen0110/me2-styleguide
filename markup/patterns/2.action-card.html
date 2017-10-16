@@ -1,131 +1,182 @@
-<!-- Action card with primary and secondary CTA -->
-<div class="profile-card__item" [class.card-item-daily]="isDailyScreen">
+<div class="row">
 
-  <div *ngIf="dto.status==CARD_STATUS_COMPLETED">
-    <div class="profile-card__detail action-card relative">
-      <div class="action-card-description" style="min-height: inherit;">
-        <div class="action-card-client-completed">
-          <p>I did it</p>
-          <i class="material-icons">&#xE5CA;</i>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="col-sm-6 col-md-6 col-lg-4">
+    <!-- Action card with primary and secondary CTA -->
+    <div class="action-card" [class.card-item-daily]="isDailyScreen">
 
-  <div *ngIf="dto.status==CARD_STATUS_INCOMPLETED">
-    <div class="profile-card__detail action-card relative">
-      <div class="action-card-description" style="min-height: inherit;">
-        <div class="action-card-client-incompleted">
-          <p>Not today</p>
-          <i class="material-icons">&#xE5CD;</i>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div *ngIf="dto.status!==CARD_STATUS_COMPLETED && dto.status!==CARD_STATUS_INCOMPLETED" class="profile-card__detail action-card relative">
-    <!--header-->
-    <div class="profile-detail--bio" style="padding-bottom: 0px;">
-      <div class="profile row" style="display: flex;">
-        <div class="col-xs-2 action-card-category" style="align-self: center;">
-          <img src="../../images/icon-action-food-gray.png" />
-        </div>
-        <div class="col-xs-9 action-card-title" style="align-self: center; padding-left: 30px;">
-          <p [innerHTML]="format(dto.title)">Log food</p>
-        </div>
-        <div class="col-xs-1 action-card-why">
-          <div class="tooltip-container">
-            <me2-tooltip [content]="dto.why"></me2-tooltip>
+      <div *ngIf="dto.status==CARD_STATUS_COMPLETED">
+        <div class="action-card__wrapper relative">
+          <div class="action-card-description" style="min-height: inherit;">
+            <div class="action-card-client-completed">
+              <p>I did it</p>
+              <i class="material-icons">&#xE5CA;</i>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--end of header-->
 
-    <!--description-->
-    <div class="action-card-description">
-      <div class="col-xs-2 empty-space">&nbsp;</div>
-      <div class="col-xs-10 content">
-        <p [innerHTML]="format(dto.description)">Log your food everyday for you to keep track of what you eat</p>
-      </div>
-    </div>
-    <!--end of description-->
-
-    <!--secondary CTA-->
-    <div *ngIf="!dto.secondaryAction || isYourPlanIsReadyCard()" class="action-card-secondary-empty">&nbsp;</div>
-
-    <hr *ngIf="dto.secondaryAction && !isYourPlanIsReadyCard()" style="margin: 0px" />
-    <div *ngIf="dto.secondaryAction && !isYourPlanIsReadyCard()">
-      <div class="col-xs-2">&nbsp;</div>
-      <div class="col-xs-8" style="padding-left: 5px; height: 42px; line-height: 42px">
-        <p style="vertical-align: middle; line-height: normal; display: inline-block; color: #35D1A3">
-          <label *ngIf="dto.isTomorrow"><strong><small [innerHTML]="format(dto.secondaryAction.title)">Log food</small></strong></label>
-          <a *ngIf="!dto.isTomorrow && !isCallClientCard()" (click)="onSecondaryAction(dto.secondaryAction)"><strong><small [innerHTML]="format(dto.secondaryAction.title)"></small></strong></a>
-          <a *ngIf="!dto.isTomorrow && isCallClientCard()" href="{{dto.secondaryAction.link}}"><strong><small [innerHTML]="format(dto.secondaryAction.title)"></small></strong></a>
-        </p>
-      </div>
-      <div *ngIf="!isCallClientCard()" class="col-xs-2" style="height: 42px; line-height: 42px">
-        <p style="vertical-align: middle; line-height: normal; display: inline-block;">
-          <label *ngIf="dto.isTomorrow"><i class="fa fa-angle-right pull-right" style="color: #35D1A3; font-size: 2.2em;"></i></label>
-          <a *ngIf="!dto.isTomorrow" (click)="onSecondaryAction(dto.secondaryAction)">
-            <i class="material-icons pull-right" style="color: #35D1A3; font-size: 2.2em;">&#xE315;</i>
-          </a>
-        </p>
-      </div>
-    </div>
-    <hr *ngIf="isDisplayPrimaryAction()" />
-    <!--end of secondary CTA-->
-
-    <!--primary CTA-->
-    <div class="profile-detail--actions" style="text-align: center;">
-      <div class="action-card-buttons">
-        <button class="btn btn--primary btn--m">Not today</button>
-        <button class="btn btn--primary btn--m">I did it</button>
-      </div>
-    </div>
-    <!--end of primary CTA-->
-  </div>
-</div>
-
-<!-- Action card with primary CTA only -->
-
-<div class="profile-card__item" [class.card-item-daily]="isDailyScreen">
-  <div *ngIf="dto.status!==CARD_STATUS_COMPLETED && dto.status!==CARD_STATUS_INCOMPLETED" class="profile-card__detail action-card relative">
-    <!--header-->
-    <div class="profile-detail--bio" style="padding-bottom: 0px;">
-      <div class="profile row" style="display: flex;">
-        <div class="col-xs-2 action-card-category" style="align-self: center;">
-          <img src="../../images/icon-action-profile-gray.png" />
-        </div>
-        <div class="col-xs-9 action-card-title" style="align-self: center; padding-left: 30px;">
-          <p [innerHTML]="format(dto.title)">Set your goals</p>
-        </div>
-        <div class="col-xs-1 action-card-why">
-          <div class="tooltip-container">
-            <me2-tooltip [content]="dto.why"></me2-tooltip>
+      <div *ngIf="dto.status==CARD_STATUS_INCOMPLETED">
+        <div class="action-card__wrapper relative">
+          <div class="action-card-description" style="min-height: inherit;">
+            <div class="action-card-client-incompleted">
+              <p>Not today</p>
+              <i class="material-icons">&#xE5CD;</i>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--end of header-->
 
-    <!--description-->
-    <div class="action-card-description">
-      <div class="col-xs-2 empty-space">&nbsp;</div>
-      <div class="col-xs-10 content">
-        <p [innerHTML]="format(dto.description)">So you want to lose weight… why? and when? Tell your coach so they can help you achieve them!</p>
+      <div *ngIf="dto.status!==CARD_STATUS_COMPLETED && dto.status!==CARD_STATUS_INCOMPLETED" class="action-card__wrapper relative">
+        <!--header-->
+        <div class="action-card__header" style="padding-bottom: 0px;">
+          <div class="profile row" style="display: flex;">
+            <div class="col-xs-2 action-card-category" style="align-self: center;">
+              <img src="../../images/icon-action-food-gray.png" />
+            </div>
+            <div class="col-xs-9 action-card-title" style="align-self: center; padding-left: 30px;">
+              <p [innerHTML]="format(dto.title)">Log food</p>
+            </div>
+            <div class="col-xs-1 action-card-why">
+              <div class="tooltip-container">
+                <me2-tooltip [content]="dto.why"></me2-tooltip>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of header-->
+
+        <!--description-->
+        <div class="action-card__description">
+          <div class="col-xs-2 empty-space">&nbsp;</div>
+          <div class="col-xs-10 content">
+            <p [innerHTML]="format(dto.description)">Log your food everyday for you to keep track of what you eat</p>
+          </div>
+        </div>
+        <!--end of description-->
+
+        <!--secondary CTA-->
+        <div *ngIf="!dto.secondaryAction || isYourPlanIsReadyCard()" class="action-card-secondary-empty">&nbsp;</div>
+
+        <hr *ngIf="dto.secondaryAction && !isYourPlanIsReadyCard()" style="margin: 0px" />
+        <div *ngIf="dto.secondaryAction && !isYourPlanIsReadyCard()">
+          <div class="col-xs-2">&nbsp;</div>
+          <div class="col-xs-8" style="padding-left: 5px; height: 42px; line-height: 42px">
+            <p style="vertical-align: middle; line-height: normal; display: inline-block; color: #35D1A3">
+              <label *ngIf="dto.isTomorrow"><strong><small [innerHTML]="format(dto.secondaryAction.title)">Log food</small></strong></label>
+              <a *ngIf="!dto.isTomorrow && !isCallClientCard()" (click)="onSecondaryAction(dto.secondaryAction)"><strong><small [innerHTML]="format(dto.secondaryAction.title)"></small></strong></a>
+              <a *ngIf="!dto.isTomorrow && isCallClientCard()" href="{{dto.secondaryAction.link}}"><strong><small [innerHTML]="format(dto.secondaryAction.title)"></small></strong></a>
+            </p>
+          </div>
+          <div *ngIf="!isCallClientCard()" class="col-xs-2" style="height: 42px; line-height: 42px">
+            <p style="vertical-align: middle; line-height: normal; display: inline-block;">
+              <label *ngIf="dto.isTomorrow"><i class="fa fa-angle-right pull-right" style="color: #35D1A3; font-size: 2.2em;"></i></label>
+              <a *ngIf="!dto.isTomorrow" (click)="onSecondaryAction(dto.secondaryAction)">
+                <i class="material-icons pull-right" style="color: #35D1A3; font-size: 2.2em;">&#xE315;</i>
+              </a>
+            </p>
+          </div>
+        </div>
+        <hr *ngIf="isDisplayPrimaryAction()" />
+        <!--end of secondary CTA-->
+
+        <!--primary CTA-->
+        <div class="action-card__actions" style="text-align: center;">
+          <div class="action-card-buttons">
+            <button class="btn btn--primary btn--m">Not today</button>
+            <button class="btn btn--primary btn--m">I did it</button>
+          </div>
+        </div>
+        <!--end of primary CTA-->
       </div>
     </div>
-    <!--end of description-->
-
-    <hr *ngIf="isDisplayPrimaryAction()" />
-
-    <!--primary CTA-->
-    <div class="profile-detail--actions" style="text-align: center;">
-      <div class="action-card-buttons">
-        <button class="btn btn--primary btn--m">Set your goals</button>
-      </div>
-    </div>
-    <!--end of primary CTA-->
   </div>
+
+  <div class="col-sm-6 col-md-4 col-lg-4">
+    <!-- Action card with primary CTA only -->
+    <div class="action-card" [class.card-item-daily]="isDailyScreen">
+      <div *ngIf="dto.status!==CARD_STATUS_COMPLETED && dto.status!==CARD_STATUS_INCOMPLETED" class="action-card__wrapper relative">
+        <!--header-->
+        <div class="action-card__header" style="padding-bottom: 0px;">
+          <div class="profile row" style="display: flex;">
+            <div class="col-xs-2 action-card-category" style="align-self: center;">
+              <img src="../../images/icon-action-profile-gray.png" />
+            </div>
+            <div class="col-xs-9 action-card-title" style="align-self: center; padding-left: 30px;">
+              <p [innerHTML]="format(dto.title)">Set your goals</p>
+            </div>
+            <div class="col-xs-1 action-card-why">
+              <div class="tooltip-container">
+                <me2-tooltip [content]="dto.why"></me2-tooltip>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of header-->
+
+        <!--description-->
+        <div class="action-card__description">
+          <div class="col-xs-2 empty-space">&nbsp;</div>
+          <div class="col-xs-10 content">
+            <p [innerHTML]="format(dto.description)">So you want to lose weight… why? and when? Tell your coach so they can help you achieve them!</p>
+          </div>
+        </div>
+        <!--end of description-->
+
+        <hr *ngIf="isDisplayPrimaryAction()" />
+
+        <!--primary CTA-->
+        <div class="action-card__actions" style="text-align: center;">
+          <div class="action-card-buttons">
+            <button class="btn btn--primary btn--m">Set your goals</button>
+          </div>
+        </div>
+        <!--end of primary CTA-->
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4 col-lg-4">
+    <!-- Action card with primary CTA only -->
+    <div class="action-card" [class.card-item-daily]="isDailyScreen">
+      <div *ngIf="dto.status!==CARD_STATUS_COMPLETED && dto.status!==CARD_STATUS_INCOMPLETED" class="action-card__wrapper relative">
+        <!--header-->
+        <div class="action-card__header" style="padding-bottom: 0px;">
+          <div class="profile row" style="display: flex;">
+            <div class="col-xs-2 action-card-category" style="align-self: center;">
+              <img src="../../images/icon-action-profile-gray.png" />
+            </div>
+            <div class="col-xs-9 action-card-title" style="align-self: center; padding-left: 30px;">
+              <p [innerHTML]="format(dto.title)">Set your goals</p>
+            </div>
+            <div class="col-xs-1 action-card-why">
+              <div class="tooltip-container">
+                <me2-tooltip [content]="dto.why"></me2-tooltip>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of header-->
+
+        <!--description-->
+        <div class="action-card__description">
+          <div class="col-xs-2 empty-space">&nbsp;</div>
+          <div class="col-xs-10 content">
+            <p [innerHTML]="format(dto.description)">So you want to lose weight… why? and when? Tell your coach so they can help you achieve them!</p>
+          </div>
+        </div>
+        <!--end of description-->
+
+        <hr *ngIf="isDisplayPrimaryAction()" />
+
+        <!--primary CTA-->
+        <div class="action-card__actions" style="text-align: center;">
+          <div class="action-card-buttons">
+            <button class="btn btn--primary btn--m">Set your goals</button>
+          </div>
+        </div>
+        <!--end of primary CTA-->
+      </div>
+    </div>
+  </div>
+
 </div>

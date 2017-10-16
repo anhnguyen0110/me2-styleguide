@@ -1633,19 +1633,16 @@ ng2-Calendar
     padding: 0.5em; } }
 /* end media*/
 /* PROFILE CARD */
-.profile-card__item {
-  font-size: 1.1em;
-  line-height: 1.3;
-  margin: 20px auto; }
-
-.profile-card__detail {
+.profile-card__wrapper {
   max-width: 270px;
   min-width: 270px;
-  margin: auto;
+  font-size: 1.1em;
+  line-height: 1.3;
+  margin: 20px auto;
   background: #fff;
   box-shadow: 2px 2px 10px rgba(127, 127, 127, 0.5);
   border-radius: 5px; }
-  .profile-card__detail.flat {
+  .profile-card__wrapper.flat {
     box-shadow: none;
     background-color: transparent; }
 
@@ -1691,31 +1688,31 @@ ng2-Calendar
     font-size: 1.2em;
     line-height: 1; }
 
-.profile-detail--bio {
+.profile-card__bio {
   padding: 10px;
   text-transform: capitalize; }
-  .profile-detail--bio .profile small {
+  .profile-card__bio .profile small {
     margin-right: 10px; }
 
-.profile-detail--goal {
+.profile-card__goal {
   position: relative;
   margin: auto; }
-  .profile-detail--goal .goal-tracker {
+  .profile-card__goal .goal-tracker {
     max-width: 240px;
     margin: auto;
     font-size: .85em; }
-  .profile-detail--goal .pop-over {
+  .profile-card__goal .pop-over {
     position: absolute;
     bottom: -90%;
     left: 52%; }
-    .profile-detail--goal .pop-over span {
+    .profile-card__goal .pop-over span {
       height: 30px;
       width: 30px;
       padding: 4px 7px;
       background-color: #F3245D;
       color: #fff;
       text-align: center; }
-      .profile-detail--goal .pop-over span:before {
+      .profile-card__goal .pop-over span:before {
         content: "";
         position: absolute;
         top: -7px;
@@ -1728,59 +1725,74 @@ ng2-Calendar
         border-bottom: 8px solid #F3245D;
         border-top: none;
         z-index: 1; }
-  .profile-detail--goal .progress-text {
+  .profile-card__goal .progress-text {
     color: #2A2F38; }
-    .profile-detail--goal .progress-text.finish {
+    .profile-card__goal .progress-text.finish {
       float: right;
       color: #35D1A3; }
-      .profile-detail--goal .progress-text.finish .dot {
+      .profile-card__goal .progress-text.finish .dot {
         color: #35D1A3; }
-    .profile-detail--goal .progress-text .dot {
+    .profile-card__goal .progress-text .dot {
       color: #2A2F38;
       font-size: 4em;
       line-height: .1; }
-  .profile-detail--goal .progress {
+  .profile-card__goal .progress {
     height: 3px;
     background-color: #35D1A3; }
-  .profile-detail--goal .progress-bar {
+  .profile-card__goal .progress-bar {
     background-color: #2A2F38;
     border: dashed 1px #2A2F38; }
-  .profile-detail--goal .progress-bar:last-child:before {
+  .profile-card__goal .progress-bar:last-child:before {
     background-color: #35D1A3; }
-  .profile-detail--goal .tooltip-inner {
+  .profile-card__goal .tooltip-inner {
     background-color: #F3245D; }
-  .profile-detail--goal .tooltip.bottom .tooltip-arrow {
+  .profile-card__goal .tooltip.bottom .tooltip-arrow {
     border-bottom-color: #F3245D; }
 
-.profile-detail--progress {
+.profile-card__progress {
   padding: 10px; }
 
-.profile-detail--actions {
+.profile-card__actions {
   padding: 10px;
   text-align: center; }
 
 @media (max-width: 1024px) {
-  .profile--detail-goal .goal-tracker {
+  .profile-card__goal .goal-tracker {
     margin-left: 10px; } }
 /* end media*/
 @media (max-width: 769px) {
-  .profile-card__detail {
+  .profile-card__wrapper {
     max-width: auto;
     min-width: 270px; } }
 /* end media*/
-p {
-  font-size: 13px; }
+.action-card {
+  margin-left: 10px;
+  margin-right: 10px; }
 
-.profile-card__detail.action-card {
+.action-card__wrapper {
   max-width: 317px;
-  min-width: 317px; }
+  min-width: 317px;
+  font-size: 1.1em;
+  line-height: 1.3;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 2px 2px 10px rgba(127, 127, 127, 0.5);
+  border-radius: 5px; }
 
-.action-card-description {
+.action-card__header {
+  padding: 10px;
+  text-transform: capitalize; }
+
+.action-card__description {
   clear: both;
   min-height: 150px; }
-  .action-card-description .content {
+  .action-card__description .content {
     margin-bottom: 5px;
     min-height: 100px; }
+
+.action-card__actions {
+  padding: 10px;
+  text-align: center; }
 
 .action-card-secondary-empty {
   line-height: 35px; }
@@ -1838,7 +1850,7 @@ p {
     font-weight: bold; }
   .action-card-client-completed i {
     float: right;
-    padding: 5px; }
+    padding: 10px; }
 
 .action-card-client-incompleted {
   background-color: lightgray;
@@ -1850,19 +1862,12 @@ p {
     font-weight: bold; }
   .action-card-client-incompleted i {
     float: right;
-    padding: 5px; }
-
-.profile-card__item {
-  margin-left: 10px;
-  margin-right: 10px; }
+    padding: 10px; }
 
 @media (max-width: 769px) {
-  .profile-card__item {
+  .action-card {
     margin-top: 0px;
     margin-bottom: 0px; }
-
-  .profile-card__detail {
-    min-width: 100%; }
 
   .action-card-buttons button {
     width: 45%; }

@@ -1,0 +1,127 @@
+$line-height-title: 48px;
+$icon-category-width: 48px;
+p {
+  font-size: 13px;
+}
+
+.profile-card__detail {
+  max-width: 317px;
+  min-width: 317px;
+}
+
+.action-card-description {
+  clear: both;
+  min-height: 150px;
+  .content {
+    margin-bottom: 5px;
+    min-height: 100px;
+  }
+}
+
+.action-card-secondary-empty {
+  line-height: 35px;
+}
+
+.action-card-title {
+  line-height: $line-height-title;
+  padding-left: 10px;
+  p {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    font-weight: bold;
+  }
+}
+
+.action-card-category img,
+.empty-space {
+  width: $icon-category-width;
+}
+
+.action-card-why {
+  padding: 0;
+  position: relative;
+  .tooltip-container {
+    position: absolute;
+    right: 15px;
+  }
+}
+
+.action-card-buttons button {
+  width: 48%;
+}
+
+.action-card-buttons button:disabled {
+  opacity: 0.3;
+}
+
+.action-card-buttons>button:first-child {
+  margin-right: 2%;
+  background-color: #e0e1e2;
+  color: gray;
+  border-color: #e0e1e2;
+}
+
+.action-card-buttons>button:only-child {
+  width: 100%;
+  color: #fff;
+  background-color: #35D1A3;
+  border-color: #35D1A3;
+}
+
+.action-card-buttons>.action-card-button-client-action {
+  background-color: white !important;
+  color: gray !important;
+  border-color: #e0e1e2 !important;
+}
+
+.action-card-client-completed {
+  background-color: #d0ece4;
+  color: #35D1A3;
+  line-height: 42px;
+  p {
+    display: inline-block;
+    padding-left: 15px;
+    font-weight: bold;
+  }
+  i {
+    float: right;
+    padding: 5px;
+  }
+}
+
+.action-card-client-incompleted {
+  background-color: lightgray;
+  color: dimgray;
+  line-height: 42px;
+  p {
+    display: inline-block;
+    padding-left: 15px;
+    font-weight: bold;
+  }
+  i {
+    float: right;
+    padding: 5px;
+  }
+}
+
+.profile-card__item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: $grid-sm--max) {
+  .profile-card__item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .profile-card__detail {
+    min-width: 100%;
+  }
+  .action-card-buttons button {
+    width: 45%;
+  }
+  .action-card-buttons>button:first-child {
+    margin-right: 4%;
+  }
+}

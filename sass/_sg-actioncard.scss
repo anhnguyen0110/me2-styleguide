@@ -1,12 +1,16 @@
+// Variables
 $line-height-title: 48px;
 $icon-category-width: 48px;
+// Styles specific
 p {
   font-size: 13px;
 }
 
 .profile-card__detail {
-  max-width: 317px;
-  min-width: 317px;
+  &.action-card {
+    max-width: 317px;
+    min-width: 317px;
+  }
 }
 
 .action-card-description {

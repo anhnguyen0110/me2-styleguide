@@ -1,7 +1,8 @@
+<!-- Action card with primary and secondary CTA -->
 <div class="profile-card__item" [class.card-item-daily]="isDailyScreen">
 
   <div *ngIf="dto.status==CARD_STATUS_COMPLETED">
-    <div class="profile-card__detail relative">
+    <div class="profile-card__detail action-card relative">
       <div class="action-card-description" style="min-height: inherit;">
         <div class="action-card-client-completed">
           <p>I did it</p>
@@ -12,7 +13,7 @@
   </div>
 
   <div *ngIf="dto.status==CARD_STATUS_INCOMPLETED">
-    <div class="profile-card__detail relative">
+    <div class="profile-card__detail action-card relative">
       <div class="action-card-description" style="min-height: inherit;">
         <div class="action-card-client-incompleted">
           <p>Not today</p>
@@ -22,7 +23,7 @@
     </div>
   </div>
 
-  <div *ngIf="dto.status!==CARD_STATUS_COMPLETED && dto.status!==CARD_STATUS_INCOMPLETED" class="profile-card__detail relative">
+  <div *ngIf="dto.status!==CARD_STATUS_COMPLETED && dto.status!==CARD_STATUS_INCOMPLETED" class="profile-card__detail action-card relative">
     <!--header-->
     <div class="profile-detail--bio" style="padding-bottom: 0px;">
       <div class="profile row" style="display: flex;">
@@ -86,11 +87,10 @@
   </div>
 </div>
 
-<div class="spacer-md"></div>
+<!-- Action card with primary CTA only -->
 
 <div class="profile-card__item" [class.card-item-daily]="isDailyScreen">
-
-  <div *ngIf="dto.status!==CARD_STATUS_COMPLETED && dto.status!==CARD_STATUS_INCOMPLETED" class="profile-card__detail relative">
+  <div *ngIf="dto.status!==CARD_STATUS_COMPLETED && dto.status!==CARD_STATUS_INCOMPLETED" class="profile-card__detail action-card relative">
     <!--header-->
     <div class="profile-detail--bio" style="padding-bottom: 0px;">
       <div class="profile row" style="display: flex;">
